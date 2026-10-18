@@ -877,6 +877,12 @@ step
     .goto 1454/1,-4367.46,1405.44,50,0
     .zone Orgrimmar >>Enter Orgrimmar
 step
+    .goto 1454/1,-4460.00,1598.60
+    .goto 1454/1,-4460.60,1584.30,10,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thatog|r upstairs
+    .accept 97246 >>Accept Meal Appeal
+    .target Thatog
+step
     .goto 1454/1,-4313.46,1676.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
     .fp Orgrimmar >>Get the Orgrimmar flight path
@@ -888,6 +894,13 @@ step
     .target Auctioneer Thathung
     .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<5
 step
+    .goto 1454/1,-4482.60,1775.00
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Borstan|r
+    .turnin 97246 >>Turn in Meal Appeal
+    .accept 97249 >>Accept Favorite Food
+    .target Borstan
+    .isOnQuest 97246
+step
     #label CampHerb
     .goto 1454/1,-4460.70,1904.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jandi|r in the Drag
@@ -895,6 +908,36 @@ step
     .turnin 97905 >>Turn in Camping 101: Herbalism
     .target Jandi
     .isOnQuest 97905
+step
+    .goto 1454/1,-4466.80,1954.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kor'geld|r outside Yelmak's Alchemy and Potions
+    .accept 97242 >>Accept Yelmak's Medley
+    .target Kor'geld
+step
+    .goto 1454/1,-4560.00,1908.50,15,0
+    .goto 1454/1,-4587.00,1918.30,15,0
+    .goto 1454/1,-4608.00,1897.40,15,0
+    .goto 1454/1,-4632.30,1911.60,15 >>Go to the water in the Valley of Honor
+    .isOnQuest 97242
+step
+    #loop
+    .goto 1454/1,-4653.90,1950.30,0
+    .goto 1454/1,-4653.90,1950.30,20,0
+    .goto 1454/1,-4677.70,1971.60,20,0
+    .goto 1454/1,-4667.40,1997.00,20,0
+    .goto 1454/1,-4609.80,2013.50,20,0
+    .goto 1454/1,-4630.60,1968.10,20,0
+    >>Loot |cRXP_PICK_Handfuls of Cattails|r and |cRXP_PICK_Speargrass Cuttings|r in the water
+    >>|cRXP_WARN_These are quest items, not herbs. Do not spend time on anything else here|r
+    .complete 97242,1 --Handful of Cattails (2)
+    .complete 97242,2 --Speargrass Cuttings (4)
+    .isOnQuest 97242
+step
+    .goto 1454/1,-4466.90,1954.50
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kor'geld|r
+    .turnin 97242 >>Turn in Yelmak's Medley
+    .target Kor'geld
+    .isQuestComplete 97242
 step
     #label Tailoring
     .goto 1454/1,-4573.31,1806.83
@@ -931,6 +974,45 @@ step
     .collect 6241,1 --White Linen Robe (1)
     .collect 4307,1 --Heavy Linen Gloves (1)
     .collect 4343,1 --Brown Linen Pants (1)
+step
+    .goto 1454/1,-4477.90,1964.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yelmak|r
+    >>|cRXP_WARN_Yelmak walks over to Kor'geld and back after the Medley turn-in. The Tailoring crafts above gave him time to return. If he is still walking, wait for him to come back before you can accept the quest|r
+    .accept 97275 >>Accept Whuut's the Rush
+    .target Yelmak
+    .isQuestTurnedIn 97242
+step
+    .goto 1454/1,-4463.00,1966.20
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Whuut|r
+    .turnin 97275 >>Turn in Whuut's the Rush
+    .target Whuut
+    .isOnQuest 97275
+step
+    #optional
+    .goto 1454/1,-4205.80,2007.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thra|r behind Grommash Hold
+    .accept 97326 >>Accept Rocks to Rests
+    .target Thra
+step
+    #optional
+    .isOnQuest 97326
+    .goto 1454/1,-4293.60,1949.90
+    >>Loot the orange |cRXP_PICK_Rocks|r on the ground
+    >>|cRXP_WARN_On launch day these will be camped. Grab any that are up, then abandon the quest if the area is empty of rocks and full of players. Do not wait on a spawn|r
+    .complete 97326,1 --Smooth Boulder (8)
+step
+    #optional
+    .isQuestComplete 97326
+    .goto 1454/1,-4205.90,2007.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thra|r
+    .turnin 97326 >>Turn in Rocks to Rests
+    .target Thra
+step
+    .goto 1454/1,-4193.40,2001.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Migi|r near Thra
+    .turnin 97249 >>Turn in Favorite Food
+    .target Migi
+    .isOnQuest 97249
 step
     .goto 1454/1,-4133.36,1939.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nazgrel|r in Grommash Hold
