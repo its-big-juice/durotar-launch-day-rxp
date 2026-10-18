@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Durotar Launch Date v1.0
+## Notes: Orc Mage Durotar route (levels 1-11) for Forever launch day. Pick the group Durotar Launch Date v1.0.
+## Author: Evan
+## Version: 1.0
+## Dependencies: RXPGuides
+
+Durotar_Launch_Date_v1.0.lua
