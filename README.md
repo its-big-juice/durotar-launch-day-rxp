@@ -2,6 +2,8 @@
 
 Durotar Launch Date v1.0 (Orc Mage, levels 1-11)
 
+**Route atlas and install guide: https://its-big-juice.github.io/durotar-launch-day-rxp/**
+
 A RestedXP (RXP) custom guide for WoW Forever launch day. It covers Valley of Trials (1-5) and Durotar (5-11), then hands off to RXP's own `12-17 The Barrens` guide.
 
 Built for: herbalism and cooking leveling, avoiding quest bottlenecks. Tailoring is trained, but only the recipes the route uses.
@@ -24,7 +26,7 @@ Requirements: Horde Orc Mage. Alliance characters load nothing. The `.toc` is wr
 
 ## Route Atlas
 
-A map of every stop in this guide, in order, on the WoW Forever beta client's map tiles. Open [`atlas/index.html`](atlas/index.html) in a browser (download the `atlas` folder; the page loads its maps from `atlas/img/`). Each section has a satellite map with numbered stops, arrows for the direction of travel, a skull where you die for a deathskip and a hearthstone where you hearth, plus a table of the objectives and milestones at each stop.
+A map of every stop in this guide, in order, on the WoW Forever beta client's map tiles. View it online at https://its-big-juice.github.io/durotar-launch-day-rxp/, or open [`atlas/index.html`](atlas/index.html) locally (download the whole `atlas` folder; the page loads its maps from `atlas/img/`). Each section has a satellite map with numbered stops, arrows for the direction of travel, a skull where you die for a deathskip and a hearthstone where you hearth, plus a table of the objectives and milestones at each stop.
 
 Colors run from green (earliest) to dark red (latest). Hollow dots are estimated positions (two graveyards and the Echo Isles death spot); everything else comes from the guide's coordinates.
 
