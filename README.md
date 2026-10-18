@@ -21,3 +21,61 @@ Requirements: Horde Orc Mage. Alliance characters load nothing. The `.toc` is wr
 - **Boosted Rest:** the campfire sit at Razor Hill is the one-per-hour Boosted Rest buff. The second campfire sit only helps if an hour has passed.
 - **Gold:** the route buys Spring Water, Conjure Water training and tailoring recipes. Skip any you don't want.
 - **Quest IDs:** 96xxx-99xxx are Forever-specific quests.
+
+## Route Atlas
+
+A map of every stop in this guide, in order, on the WoW Forever beta client's map tiles. Open [`atlas/index.html`](atlas/index.html) in a browser (download the `atlas` folder; the page loads its maps from `atlas/img/`). Each section has a satellite map with numbered stops, arrows for the direction of travel, a skull where you die for a deathskip and a hearthstone where you hearth, plus a table of the objectives and milestones at each stop.
+
+Colors run from green (earliest) to dark red (latest). Hollow dots are estimated positions (two graveyards and the Echo Isles death spot); everything else comes from the guide's coordinates.
+
+![Full route](atlas/screenshots/00_overview.jpg)
+
+<details><summary>Section maps</summary>
+
+**Valley of Trials · lvl 1-5**
+
+![Valley of Trials · lvl 1-5](atlas/screenshots/01_valley.jpg)
+
+**Sen'jin and Kolkar Crag · lvl 5-6**
+
+![Sen'jin and Kolkar Crag · lvl 5-6](atlas/screenshots/02_senjin.jpg)
+
+**Ridge and Razor Hill · lvl 6**
+
+![Ridge and Razor Hill · lvl 6](atlas/screenshots/03_razor.jpg)
+
+**Tiragarde Keep · lvl 6-7**
+
+![Tiragarde Keep · lvl 6-7](atlas/screenshots/04_tira.jpg)
+
+**Wreckage, Sen'jin and Echo Isles · lvl 7-8**
+
+![Wreckage, Sen'jin and Echo Isles · lvl 7-8](atlas/screenshots/05_echo.jpg)
+
+**Razor Hill and the Razormane · lvl 8-9**
+
+![Razor Hill and the Razormane · lvl 8-9](atlas/screenshots/06_camps.jpg)
+
+**Threat from Below · lvl 9**
+
+![Threat from Below · lvl 9](atlas/screenshots/07_threat.jpg)
+
+**Drygulch and Thunder Ridge · lvl 9-10**
+
+![Drygulch and Thunder Ridge · lvl 9-10](atlas/screenshots/08_drygulch.jpg)
+
+**Orgrimmar · lvl 10**
+
+![Orgrimmar · lvl 10](atlas/screenshots/09_org.jpg)
+
+**Skull Rock and the Spitelash Coast · lvl 10**
+
+![Skull Rock and the Spitelash Coast · lvl 10](atlas/screenshots/10_skull.jpg)
+
+**Hearth and Far Watch · lvl 10-11**
+
+![Hearth and Far Watch · lvl 10-11](atlas/screenshots/11_far.jpg)
+
+</details>
+
+Map data: [ForeverChanges](https://foreverchanges.pro/map/kalimdor).
